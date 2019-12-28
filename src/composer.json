@@ -1,0 +1,19 @@
+{
+    "name": "projeto/mvc",
+    "description": "Aprendendo MVC com PHP",
+    "authors": [
+        {
+            "name": "Marcelo Silva",
+            "email": "tchellosan@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":"../app/",
+            "Src\\":"../src/"
+        }
+    }
+}
