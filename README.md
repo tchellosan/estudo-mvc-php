@@ -1,2 +1,2 @@
-# estudo-mvc-php
+# Estudo MVC/PHP
 Projeto de estudo MVC/PHP
