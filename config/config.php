@@ -1,6 +1,6 @@
 <?php 
 #Root directory
-$localSite="projetomvc/";
+$localSite="estudo-mvc-php/";
 define("DIRPAGE", "http://{$_SERVER['HTTP_HOST']}/{$localSite}");
 
 if (substr($_SERVER['DOCUMENT_ROOT'],-1) == "/") {
