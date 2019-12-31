@@ -18,4 +18,15 @@ class ClassCadastro extends ClassConexao {
 		$this->conn->bindParam(":CIDADE", 	$cidade,	\PDO::PARAM_STR);
 		$this->conn->execute();
 	}
+
+	protected function consultar($id) {
+
+		$sql_select = "SELECT NOME, SEXO, CIDADE FROM CADASTRO WHERE ID = :ID ";
+
+		$this->conn = $this->getConn()->prepare($sql_select);
+		$this->conn->bindParam(":ID", 		$id, 		\PDO::PARAM_INT);
+		$this->conn->execute();
+
+		return $this->conn->fetch(\PDO::FETCH_ASSOC);
+	}	
 }

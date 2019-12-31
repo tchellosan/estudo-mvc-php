@@ -37,4 +37,24 @@ class ControllerCadastro extends ClassCadastro  {
 
 		echo "<br>Inclusão realizada com sucesso";
 	}
+
+	public function consultarCliente(){
+
+		if (isset($_POST['id'])) {
+			$id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_SPECIAL_CHARS);
+		}		
+
+		$rs = $this->consultar($id);
+
+		$this->nome = $rs['NOME'];
+		$this->sexo = $rs['SEXO'];
+		$this->cidade = $rs['CIDADE'];
+
+		echo "Nome: ".$this->nome."<br>";
+		echo "Sexo: ".$this->sexo."<br>";
+		echo "Cidade: ".$this->cidade."<br>";
+
+		echo "<br>Consulta realizada com sucesso";
+	}
+
 }
