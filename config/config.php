@@ -16,6 +16,6 @@ define("DIRJS", DIRPAGE."public/js/");
 
 #Databases
 define("HOSTNAME", "localhost");
-define("DATABASE", "mvc");
+define("DATABASE", "mvcphp");
 define("USER", "root");
 define("PASSWORD", "");

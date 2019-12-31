@@ -16,7 +16,8 @@ class ClassRoutes {
 		$this->rota = Array(
 			"" => "ControllerHome",
 			"home" => "ControllerHome",
-			"contato" => "ControllerContato"
+			"contato" => "ControllerContato",
+			"cadastro" => "ControllerCadastro"
 		);
 
 		if (!array_key_exists($recurso, $this->rota))
